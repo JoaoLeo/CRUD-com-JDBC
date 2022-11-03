@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Atualizar funcionario </title>
+<link rel="stylesheet" href="../../style/style.css"> 
+</head>
+<body onload="carregarInformacoes()">
+	<h1 style="text-align: center;"> FORMULARIO DE ATUALIZAÇÃO </h1>
+	<div id = "formDiv"> 
+	 
+	
+	<form> 
+	Nome:<br> <input type = "text" id = "nomeAtt"> <br>
+	Data de aniversario: <br> <input type = "date" id ="dtAniversarioatt"> <br>
+	Foto: <br><input type = "text" id = "fotoAtt"> <br>
+	Setor: <br> <input type ="number" id ="idSetorAtt"> <br>
+	<button onclick="atualizarFuncionario()" type = "submit"> Atualizar </button>
+	<br>
+	</form>
+	<br>
+	<center> 
+		Setores disponiveis: 
+	<table id = "selectSetor">
+		<thead>  
+		<tr> 
+		<th> Id </th>
+		<th> Nome  </th>
+		</tr>
+		</thead>
+		<tbody id ="bodyTable"> 
+			
+		</tbody>
+	</table>
+	</center>
+	<br>
+	
+</div> 
+</body>
+<script src = "Resources.js"> </script> 
+</html>

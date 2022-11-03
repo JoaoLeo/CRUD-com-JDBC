@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Criação de funcionario </title>
+<link rel="stylesheet" href="../../style/style.css"> 
+</head>
+
+<body onload = "pegarSetores()">
+	<h1 style="text-align: center;"> FORMULARIO DE CRIAÇÃO </h1>
+	<div id = "formDiv"> 
+	
+	
+	<form method = "POST" onsubmit="criarFuncionario()"> 
+	Nome: <br> <input type = "text" id = "nome" placeholder="Seu nome"> <br>
+	Data de aniversario:  <br> <input type = "date" id ="dtAniversario"> <br>
+	Foto:  <br> <input type = "text" id = "foto" placeholder="Exemplo.png"> <br>
+	ID do setor:  <br> <input type = "number" id = "idSetor" placeholder="1"> <br>
+	<button type = "submit"> Criar </button>
+	<br>
+	</form>
+	<br>
+	<center> 
+		Setores disponiveis: 
+	<table id = "selectSetor">
+		<thead>  
+		<tr> 
+		<th> Id </th>
+		<th> Nome  </th>
+		</tr>
+		</thead>
+		<tbody id ="bodyTable"> 
+			
+		</tbody>
+	</table>
+	</center>
+	<br>
+	
+</div> 
+</body>
+
+<script src = "Resources.js"> </script> 
+</html>
